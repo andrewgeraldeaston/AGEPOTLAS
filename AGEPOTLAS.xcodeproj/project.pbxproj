@@ -14,6 +14,10 @@
 		A75E216919E6944B00DEB0F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75E216819E6944B00DEB0F9 /* Images.xcassets */; };
 		A75E216C19E6944B00DEB0F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75E216A19E6944B00DEB0F9 /* LaunchScreen.xib */; };
 		A75E217819E6944B00DEB0F9 /* AGEPOTLASTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E217719E6944B00DEB0F9 /* AGEPOTLASTests.m */; };
+		A75E218319E6964E00DEB0F9 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E218219E6964E00DEB0F9 /* AddTaskViewController.m */; };
+		A75E218619E696CF00DEB0F9 /* DetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E218519E696CF00DEB0F9 /* DetailTaskViewController.m */; };
+		A75E218919E6974300DEB0F9 /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E218819E6974300DEB0F9 /* EditTaskViewController.m */; };
+		A78B71E619EBFA250027D228 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = A78B71E519EBFA250027D228 /* Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,15 @@
 		A75E217119E6944B00DEB0F9 /* AGEPOTLASTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGEPOTLASTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75E217619E6944B00DEB0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A75E217719E6944B00DEB0F9 /* AGEPOTLASTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGEPOTLASTests.m; sourceTree = "<group>"; };
+		A75E218119E6964E00DEB0F9 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		A75E218219E6964E00DEB0F9 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		A75E218419E696CF00DEB0F9 /* DetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTaskViewController.h; sourceTree = "<group>"; };
+		A75E218519E696CF00DEB0F9 /* DetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTaskViewController.m; sourceTree = "<group>"; };
+		A75E218719E6974300DEB0F9 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
+		A75E218819E6974300DEB0F9 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
+		A78B71E419EBFA250027D228 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		A78B71E519EBFA250027D228 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		A7E1BEAA19EB16670018B3D0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +99,13 @@
 				A75E216219E6944B00DEB0F9 /* ViewController.h */,
 				A75E216319E6944B00DEB0F9 /* ViewController.m */,
 				A75E216519E6944B00DEB0F9 /* Main.storyboard */,
+				A75E218419E696CF00DEB0F9 /* DetailTaskViewController.h */,
+				A75E218519E696CF00DEB0F9 /* DetailTaskViewController.m */,
+				A75E218119E6964E00DEB0F9 /* AddTaskViewController.h */,
+				A75E218219E6964E00DEB0F9 /* AddTaskViewController.m */,
+				A75E218719E6974300DEB0F9 /* EditTaskViewController.h */,
+				A75E218819E6974300DEB0F9 /* EditTaskViewController.m */,
+				A78B71E319EBFA070027D228 /* Models */,
 				A75E216819E6944B00DEB0F9 /* Images.xcassets */,
 				A75E216A19E6944B00DEB0F9 /* LaunchScreen.xib */,
 				A75E215B19E6944B00DEB0F9 /* Supporting Files */,
@@ -96,6 +116,7 @@
 		A75E215B19E6944B00DEB0F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7E1BEAA19EB16670018B3D0 /* PrefixHeader.pch */,
 				A75E215C19E6944B00DEB0F9 /* Info.plist */,
 				A75E215D19E6944B00DEB0F9 /* main.m */,
 			);
@@ -117,6 +138,15 @@
 				A75E217619E6944B00DEB0F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A78B71E319EBFA070027D228 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A78B71E419EBFA250027D228 /* Task.h */,
+				A78B71E519EBFA250027D228 /* Task.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A75E216419E6944B00DEB0F9 /* ViewController.m in Sources */,
+				A75E218319E6964E00DEB0F9 /* AddTaskViewController.m in Sources */,
 				A75E216119E6944B00DEB0F9 /* AppDelegate.m in Sources */,
+				A78B71E619EBFA250027D228 /* Task.m in Sources */,
+				A75E218919E6974300DEB0F9 /* EditTaskViewController.m in Sources */,
 				A75E215E19E6944B00DEB0F9 /* main.m in Sources */,
+				A75E218619E696CF00DEB0F9 /* DetailTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +380,7 @@
 				INFOPLIST_FILE = AGEPOTLAS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,6 +391,7 @@
 				INFOPLIST_FILE = AGEPOTLAS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +448,7 @@
 				A75E217D19E6944B00DEB0F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A75E217E19E6944B00DEB0F9 /* Build configuration list for PBXNativeTarget "AGEPOTLASTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +457,7 @@
 				A75E218019E6944B00DEB0F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
